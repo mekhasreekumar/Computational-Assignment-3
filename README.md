@@ -418,8 +418,7 @@ for(i in 1:9) {
 ## Question 5
 
 ```{r }
-#Question 5
-# Part 1: Data Generation with 9 dimensions
+# **Part 1: Data Generation with 9 dimensions**
 N <- 200
 
 # Set seed for reproducibility
@@ -465,8 +464,8 @@ log_conditional <- function(beta_prop, beta_current, param_idx, X, y, prior_mean
 }
 
 # Two different proposal scales
-proposal_sd_low <- 2.2   # For ~10% acceptance rate
-proposal_sd_high <- 1.4  # For ~30% acceptance rate
+proposal_sd_low <- 2.5   # For ~10% acceptance rate
+proposal_sd_high <- 1.1  # For ~30% acceptance rate
 
 # Initialize storage
 chains <- array(NA, dim = c(n_iter, n_params, n_chains))
